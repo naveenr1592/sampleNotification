@@ -1,0 +1,6 @@
+framework module Pods_Spotifile {
+  umbrella header "Pods-Spotifile-umbrella.h"
+
+  export *
+  module * { export * }
+}
