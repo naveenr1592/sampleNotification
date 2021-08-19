@@ -16,6 +16,7 @@ class PushNotificationHandler extends Component {
         console.log(registrationError, '--');
       },
     );
+//below function trigger when notification received when application in foreground mode
     PushNotificationIOS.addNotificationRequest({
       fireDate: new Date(Date.now() + 5 * 1000).toISOString(),
       title: 'pure react native test',
@@ -31,6 +32,7 @@ class PushNotificationHandler extends Component {
       threadId: '490uio3rji',
       repeats: 'day',
     });
+//below function will trigger when app killed from background and tap notification and open application
     PushNotificationIOS.addEventListener('notification', function(
       notification,
     ) {
